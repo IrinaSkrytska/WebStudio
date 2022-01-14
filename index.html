@@ -18,17 +18,24 @@
 		<!--Header of the site-->
 		<header class="page-header">
 			<div class="container page-header__container">
-				<nav class="page-header__nav">
 					<a href="" class="header__logo">
 						Web
 						<span class="header__logo__color">Studio</span>
 					</a>
-					<ul class="page-header__main-links">
-						<li><a href="" class="page-header__link page-header__link__underline">Студия</a></li>
-						<li><a href="./portfolio.html" class="page-header__link">Портфолио</a></li>
-						<li><a href="" class="page-header__link">Контакты</a></li>
-					</ul>
-				</nav>
+					<button class="menu-button is-open" type="button" data-menu-button>
+						<svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+							<use class="cross" href="images/sprite.svg#close-lines-cross"></use>
+							<use class="menu" href="images/sprite.svg#menu-lines"></use>
+						</svg>
+						<div class="menu__container is-open" id="menu__container" data-menu>
+							<nav class="page-header__nav">
+						<ul class="page-header__main-links">
+							<li><a href="" class="page-header__link page-header__link__underline">Студия</a></li>
+							<li><a href="./portfolio.html" class="page-header__link">Портфолио</a></li>
+							<li><a href="" class="page-header__link">Контакты</a></li>
+						</ul>
+				  </nav>
+				</div>
 				<ul class="page-header__main-contacts">
 					<li class="page-header__communication">
 						<a href="mailto:info@devstudio.com" class="page-header__contact">
@@ -457,7 +464,13 @@
 					<button type="submit" class="form-submit-button">Отправить</button>
 				</form>
 			</div>
+			<div class="menu__backdrop is-hidden">
+				<div class="menu__modal">
+					<button type="button data-modal-close"></button>
+				</div>
+			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

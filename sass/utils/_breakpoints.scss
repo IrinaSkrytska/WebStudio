@@ -1,0 +1,15 @@
+$breakpoints: (
+	"mobile": (
+		min-width: 319px,
+	),
+	"tablet": (
+		min-width: 767px,
+	),
+	"dekstop": (
+		min-width: 1280px,
+	),
+	"dekstop-fhd": (
+		min-width: 1919px,
+	),
+	"retina-apple": (),
+) !default;
