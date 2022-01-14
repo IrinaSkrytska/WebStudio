@@ -1074,7 +1074,6 @@ img {
 .menu__container {
   display: none;
   position: absolute;
-  top: 100%;
   left: 0;
   width: 100%;
   background-color: #2121;
