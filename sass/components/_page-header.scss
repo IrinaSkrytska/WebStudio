@@ -1,61 +1,124 @@
-.page-header {
-	position: relative;
-}
 .page-header__nav {
-	@extend %centered-content;
+	@include respond-to(tablet) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 .page-header__main-links {
-	@extend %centered-content;
+	@include respond-to(tablet) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
+
 .page-header__main-contacts {
-	@extend %centered-content;
+	@include respond-to(tablet) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
+
 .page-header__container {
-	@extend %centered-content;
+	@include respond-to(tablet) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
+
 .page-header__link {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	color: $main-color;
-	display: flex;
-	margin-right: 50px;
-	padding: 32px 0;
-	position: relative;
-	&:hover {
-		color: $active-color;
-		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include respond-to(mobile) {
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 47px;
+		letter-spacing: 0.02em;
+		color: #212121;
+	}
+	@include respond-to(tablet) {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		color: $main-color;
+		display: flex;
+		margin-right: 50px;
+		padding: 32px 0;
+		position: relative;
+		&:hover {
+			color: $active-color;
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
 	}
 }
 .page-header__main-links {
 	margin: 0;
-}
-.page-header__link__underline::after {
-	content: "";
-	width: 48px;
-	height: 4px;
-	background: $active-color;
-	border-radius: 2px;
-	position: absolute;
-	bottom: -1px;
-}
-.page-header__contact {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	color: $sec-active-color;
-	padding: 32px 0;
-	margin-left: 50px;
-	display: flex;
-	align-items: center;
-	&:hover {
-		color: $active-color;
-		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@include respond-to(mobile) {
+		margin-bottom: 306px;
+		margin-left: 40px;
 	}
 }
-
+.page-header__link__underline::after {
+	@include respond-to(tablet) {
+		content: "";
+		width: 48px;
+		height: 4px;
+		background: $active-color;
+		border-radius: 2px;
+		position: absolute;
+		bottom: -1px;
+	}
+}
+.page-header__contact {
+	@include respond-to(tablet) {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		color: $sec-active-color;
+		padding: 32px 0;
+		margin-left: 50px;
+		display: flex;
+		align-items: center;
+		&:hover {
+			color: $active-color;
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
+}
+.phone {
+	@include respond-to(mobile) {
+		font-weight: 500;
+		font-size: 34px;
+		line-height: 40px;
+		letter-spacing: 0.02em;
+		color: #2196f3;
+	}
+}
+.mail {
+	@include respond-to(mobile) {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.02em;
+		color: #757575;
+	}
+}
+.mail-communication {
+	@include respond-to(mobile) {
+		padding-bottom: 64px;
+	}
+}
+.phone-communication {
+	@include respond-to(mobile) {
+		margin-bottom: 32px;
+	}
+}
+.page-header__main-contacts {
+	@include respond-to(mobile) {
+		display: flex;
+		flex-direction: column-reverse;
+		padding-left: 40px;
+	}
+}
 .page-header__main-contacts:first-child {
 	margin: 0;
 }
@@ -64,6 +127,48 @@ header {
 }
 
 .page-header__contact-icon {
-	fill: currentColor;
-	margin-right: 10px;
+	@include respond-to(mobile) {
+		display: none;
+	}
+	@include respond-to(tablet) {
+		fill: currentColor;
+		margin-right: 10px;
+	}
+}
+.page-header {
+	@include respond-to(mobile) {
+		position: relative;
+	}
+}
+.page-header__main-link {
+	padding-bottom: 32px;
+}
+.page-header__link:focus {
+	@include respond-to(mobile) {
+		color: #2196f3;
+	}
+}
+.page-header__networks {
+	@include respond-to(mobile) {
+		display: flex;
+		padding-left: 40px;
+		padding-bottom: 48px;
+	}
+}
+.page-header__network-link {
+	@include respond-to(mobile) {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.02em;
+		color: $active-color;
+	}
+}
+.page-header__network:not(:last-child)::after {
+	@include respond-to(mobile) {
+		content: "";
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }

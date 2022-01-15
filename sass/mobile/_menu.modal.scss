@@ -1,29 +1,59 @@
 .menu-button {
-	display: inline-flex;
-	align-items: center;
-	margin: 0;
-	padding: 0;
-	border: none;
-	background-color: transparent;
+	@include respond-to(tablet) {
+		display: none;
+	}
+	@include respond-to(mobile) {
+		display: inline-flex;
+		border: none;
+		background-color: transparent;
+		position: absolute;
+		right: 15px;
+		bottom: 10px;
+	}
 }
 
 .menu-button .cross {
-	display: none;
+	@include respond-to(mobile) {
+		display: none;
+	}
 }
 .menu-button.is-open .cross {
-	display: block;
+	@include respond-to(tablet) {
+		display: none;
+	}
+	@include respond-to(mobile) {
+		display: block;
+	}
 }
 .menu-button.is-open .menu {
-	display: none;
+	@include respond-to(mobile) {
+		display: none;
+	}
 }
+
 .menu__container {
-	display: none;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	background-color: #2121;
-	&is-open {
-		display: block;
+	@include respond-to(tablet) {
+		display: none;
+	}
+	@include respond-to(mobile) {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		&.is-open {
+			@include respond-to(tablet) {
+				display: none;
+			}
+			@include respond-to(mobile) {
+				display: block;
+			}
+		}
+	}
+}
+.menu-button:focus {
+	@include respond-to(mobile) {
+		fill: #2196f3;
 	}
 }

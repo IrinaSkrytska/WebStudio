@@ -1,16 +1,36 @@
 .header__logo {
-	display: flex;
-	margin-right: 93px;
-	align-items: center;
-	font-family: "Raleway", sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 1.2;
-	color: $active-color;
-	letter-spacing: 0.03em;
-	&__color {
-		display: inline-block;
-		color: $main-color;
+	@include respond-to(tablet) {
+		display: flex;
+		margin-right: 93px;
+		align-items: center;
+		font-family: "Raleway", sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 1.2;
+		color: $active-color;
+		letter-spacing: 0.03em;
+		&__color {
+			display: inline-block;
+			color: $main-color;
+		}
+	}
+	@include respond-to(mobile) {
+		display: flex;
+		margin-top: 16px;
+		margin-left: 15px;
+		margin-bottom: 15px;
+		align-items: center;
+		font-family: "Raleway", sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 1.2;
+		color: $active-color;
+		letter-spacing: 0.03em;
+		&__color {
+			display: inline-block;
+			color: $main-color;
+		}
 	}
 }
