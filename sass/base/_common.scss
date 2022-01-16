@@ -5,10 +5,17 @@ body {
 	color: $main-color;
 }
 .section {
-	padding: 94px 0;
+	@include respond-to(dekstop) {
+		padding: 94px 0;
+	}
+	@include respond-to(mobile) {
+		padding: 60px 0;
+	}
 }
 .container {
-	@include respond-to(mobile) {
+	@media screen and (min-width: 480px) {
+		padding: 0 15px;
+		margin: 0 auto;
 		width: 480px;
 	}
 	@include respond-to(dekstop) {

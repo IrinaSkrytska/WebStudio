@@ -52,8 +52,7 @@
 .page-header__main-links {
 	margin: 0;
 	@include respond-to(mobile) {
-		margin-bottom: 306px;
-		margin-left: 40px;
+		padding-left: 40px;
 	}
 }
 .page-header__link__underline::after {
