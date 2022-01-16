@@ -58,3 +58,8 @@
 		fill: #2196f3;
 	}
 }
+.page-header__nav-links {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
