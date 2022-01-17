@@ -1,7 +1,7 @@
 .header__logo {
-	@include respond-to(tablet) {
+	@include respond-to(dekstop) {
 		display: flex;
-		margin-right: 93px;
+		margin-left: 0;
 		align-items: center;
 		font-family: "Raleway", sans-serif;
 		font-style: normal;

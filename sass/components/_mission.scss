@@ -1,40 +1,47 @@
-.mission {
+.mission__section {
 	@include respond-to(mobile) {
 		display: none;
 	}
-	&__mobile-title {
-		display: none;
+}
+.mission__section {
+	@include respond-to(dekstop) {
+		display: block;
 	}
-	&__section {
-		display: none;
-	}
+}
+.mission {
 	@include respond-to(dekstop) {
 		display: flex;
 		justify-content: center;
-		&__section {
-			padding-top: 0;
-		}
-		&__image {
-			display: flex;
-			margin-right: 30px;
-			background: rgba(47, 48, 58, 0.8);
-			position: relative;
-			width: 370px;
-			text-align: center;
-		}
-		&__title {
-			font-size: 14px;
-			line-height: 1.14;
-			letter-spacing: 0.03em;
-			text-transform: uppercase;
-			color: #ffffff;
-			width: 370px;
-			height: 70px;
-			background: rgba(47, 48, 58, 0.8);
-			position: absolute;
-			bottom: 0;
-			margin: 0;
-			padding-top: 27px;
-		}
+	}
+}
+.mission__section {
+	@include respond-to(dekstop) {
+		padding-top: 0;
+	}
+}
+.mission__image {
+	@include respond-to(dekstop) {
+		display: flex;
+		margin-right: 30px;
+		background: rgba(47, 48, 58, 0.8);
+		position: relative;
+		width: 370px;
+		text-align: center;
+	}
+}
+.mission__title {
+	@include respond-to(dekstop) {
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #ffffff;
+		width: 370px;
+		height: 70px;
+		background: rgba(47, 48, 58, 0.8);
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		padding-top: 27px;
 	}
 }

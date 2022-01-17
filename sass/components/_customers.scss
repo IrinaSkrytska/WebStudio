@@ -1,65 +1,75 @@
 .customers {
-	@include respond-to(dekstop) {
-		display: flex;
-		&__meta {
-			width: 170px;
-			height: 92px;
-			&:not(:last-child) {
-				margin-right: 30px;
-			}
-		}
-		&__link {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: 100%;
-			border: 1px solid #afb1b8;
-			border-radius: 4px;
-			color: #afb1b8;
-			&:hover,
-			&:focus {
-				color: $active-color;
-				border-color: $active-color;
-				transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-			}
-		}
-		&__icon {
-			fill: currentColor;
-			width: 106px;
-			height: 60px;
-		}
-	}
 	@include respond-to(mobile) {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		&__meta {
-			flex-basis: calc((100% - 60px) / 2);
-		}
-		&__meta:nth-child(2n + 1) {
+	}
+	@include respond-to(dekstop) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+}
+.customers__meta {
+	@include respond-to(mobile) {
+		height: 92px;
+		margin-top: 30px;
+		flex-basis: calc((100% - 2 * 30px) / 2);
+	}
+	@include respond-to(dekstop) {
+		margin-top: 0;
+		width: 170px;
+		height: 92px;
+		&:not(:last-child) {
 			margin-right: 30px;
 		}
-		&__meta:nth-child(-n + 5) {
-			margin-bottom: 30px;
+	}
+}
+.customers__meta:nth-child(2n + 1) {
+	@include respond-to(mobile) {
+		margin-right: 30px;
+	}
+}
+.customers__meta .customers__link {
+	@include respond-to(mobile) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		border: 1px solid #afb1b8;
+		border-radius: 4px;
+		fill: #afb1b8;
+		&:focus {
+			color: $active-color;
+			border-color: $active-color;
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
-		&__link {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 100%;
-			height: 100%;
-			border: 1px solid #afb1b8;
-			border-radius: 4px;
-			fill: #afb1b8;
-			&:focus {
-				color: $active-color;
-				border-color: $active-color;
-				transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-			}
-			&__icon {
-				fill: currentColor;
-			}
+	}
+	@include respond-to(dekstop) {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		border: 1px solid #afb1b8;
+		border-radius: 4px;
+		color: #afb1b8;
+		&:hover,
+		&:focus {
+			color: $active-color;
+			border-color: $active-color;
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
+	}
+}
+.customers__icon {
+	@include respond-to(mobile) {
+		fill: #afb1b8;
+		width: 106px;
+		height: 60px;
+	}
+	@include respond-to(dekstop) {
+		fill: currentColor;
+		width: 106px;
+		height: 60px;
 	}
 }

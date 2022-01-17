@@ -1,5 +1,5 @@
 .menu-button {
-	@include respond-to(tablet) {
+	@include respond-to(dekstop) {
 		display: none;
 	}
 	@include respond-to(mobile) {
@@ -19,7 +19,7 @@
 	}
 }
 .menu-button.is-open .cross {
-	@include respond-to(tablet) {
+	@include respond-to(dekstop) {
 		display: none;
 	}
 	@include respond-to(mobile) {
@@ -33,7 +33,7 @@
 }
 
 .menu__container {
-	@include respond-to(tablet) {
+	@include respond-to(dekstop) {
 		display: none;
 	}
 	@include respond-to(mobile) {
@@ -46,7 +46,7 @@
 		width: 100%;
 		background-color: #fff;
 		&.is-open {
-			@include respond-to(tablet) {
+			@include respond-to(dekstop) {
 				display: none;
 			}
 			@include respond-to(mobile) {
@@ -59,11 +59,6 @@
 	@include respond-to(mobile) {
 		fill: #2196f3;
 	}
-}
-.page-header__nav-links {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 .contacts__link {
 	margin-bottom: 302px;
