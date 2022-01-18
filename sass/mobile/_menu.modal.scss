@@ -1,3 +1,13 @@
+.menu__container {
+	@include respond-to(tablet) {
+		display: none;
+	}
+}
+.menu-button {
+	@include respond-to(tablet) {
+		display: none;
+	}
+}
 .menu-button {
 	display: none;
 }
@@ -40,11 +50,9 @@
 }
 
 .menu__container.is-open {
-	display: none;
-}
-
-.menu__container.is-open {
 	display: block;
+	position: fixed;
+	overflow-y: scroll;
 }
 
 .menu-button:focus {

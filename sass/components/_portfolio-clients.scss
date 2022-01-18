@@ -1,8 +1,14 @@
 .clients {
-	display: flex;
-	flex-wrap: wrap;
-	flex-basis: calc(100% / 3 - 30px);
-	&__meta {
+	@include respond-to(dekstop) {
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: calc(100% / 3 - 30px);
+	}
+}
+
+.clients__meta {
+	margin-bottom: 30px;
+	@include respond-to(dekstop) {
 		margin-right: 30px;
 		margin-bottom: 30px;
 		background: #ffffff;
@@ -17,23 +23,23 @@
 			margin-bottom: 0;
 		}
 	}
-	&__description {
-		border: 1px solid #eeeeee;
-	}
-	&__name {
-		font-weight: bold;
-		font-size: 18px;
-		line-height: 2;
-		padding: 20px 24px 4px 24px;
-		color: $main-color;
-	}
-	&__meaning {
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 1.9;
-		color: $sec-active-color;
-		padding: 4px 24px 20px 24px;
-	}
+}
+.clients__description {
+	border: 1px solid #eeeeee;
+}
+.clients__name {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 2;
+	padding: 20px 24px 4px 24px;
+	color: $main-color;
+}
+.clients__meaning {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.9;
+	color: $sec-active-color;
+	padding: 4px 24px 20px 24px;
 }
 img {
 	display: block;

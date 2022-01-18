@@ -1,7 +1,12 @@
 .benefits__thumb {
 	display: flex;
 	flex-direction: column;
-	margin-left: 15px;
+	margin-left: 0 auto;
+	@include respond-to(tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: calc((100% - 30px) / 4);
+	}
 }
 .benefits__title {
 	text-align: center;

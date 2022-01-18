@@ -1,20 +1,4 @@
 .header__logo {
-	@include respond-to(dekstop) {
-		display: flex;
-		margin-left: 0;
-		align-items: center;
-		font-family: "Raleway", sans-serif;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 26px;
-		line-height: 1.2;
-		color: $active-color;
-		letter-spacing: 0.03em;
-		&__color {
-			display: inline-block;
-			color: $main-color;
-		}
-	}
 	display: flex;
 	margin-top: 16px;
 	margin-left: 15px;
@@ -30,5 +14,26 @@
 	&__color {
 		display: inline-block;
 		color: $main-color;
+	}
+	@include respond-to(tablet) {
+		display: flex;
+		align-items: center;
+		margin-left: 15px;
+	}
+	@include respond-to(dekstop) {
+		display: flex;
+		margin-left: 0;
+		align-items: center;
+		font-family: "Raleway", sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 26px;
+		line-height: 1.2;
+		color: $active-color;
+		letter-spacing: 0.03em;
+		&__color {
+			display: inline-block;
+			color: $main-color;
+		}
 	}
 }
