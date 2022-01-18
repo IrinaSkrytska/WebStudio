@@ -1,19 +1,77 @@
 .footer {
-	@include respond-to(mobile) {
+	background: $sec-background-color;
+	padding: 60px 0;
+}
+
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.footer__logo {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 1.2;
+	color: $active-color;
+	letter-spacing: 0.03em;
+}
+.footer__logo__color {
+	display: inline-block;
+	color: #fff;
+}
+.footer__title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.footer__social-networks {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.footer__social-links:not(:last-child) {
+	margin-right: 10px;
+}
+.footer__network-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	fill: #fff;
+	&:hover {
+		background-color: $active-color;
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+.footer__icons {
+	display: flex;
+	margin-top: 20px;
+}
+.footer {
+	@include respond-to(dekstop) {
 		background: $sec-background-color;
 		padding: 60px 0;
 	}
-
-	.footer__contacts {
-		@include respond-to(mobile) {
+	.footer__container {
+		@include respond-to(dekstop) {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-bottom: 60px;
+			align-items: baseline;
 		}
 	}
 	.footer__logo {
-		@include respond-to(mobile) {
+		@include respond-to(dekstop) {
+			margin-right: 70px;
 			font-family: "Raleway", sans-serif;
 			font-style: normal;
 			font-weight: bold;
@@ -24,13 +82,13 @@
 		}
 	}
 	.footer__logo__color {
-		@include respond-to(mobile) {
+		@include respond-to(dekstop) {
 			display: inline-block;
 			color: #fff;
 		}
 	}
 	.footer__title {
-		@include respond-to(mobile) {
+		@include respond-to(dekstop) {
 			font-style: normal;
 			font-weight: bold;
 			font-size: 14px;
@@ -40,21 +98,23 @@
 			color: #ffffff;
 		}
 	}
-	.footer__social-networks {
-		@include respond-to(mobile) {
+	.footer__social-links {
+		@include respond-to(dekstop) {
 			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-bottom: 60px;
+			justify-content: center;
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
 		}
 	}
-	.footer__social-links:not(:last-child) {
-		@include respond-to(mobile) {
-			margin-right: 10px;
+
+	.footer__social-networks {
+		@include respond-to(dekstop) {
+			margin-left: 70px;
 		}
 	}
 	.footer__network-link {
-		@include respond-to(mobile) {
+		@include respond-to(dekstop) {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -70,87 +130,9 @@
 		}
 	}
 	.footer__icons {
-		@include respond-to(mobile) {
+		@include respond-to(dekstop) {
 			display: flex;
 			margin-top: 20px;
-		}
-	}
-	.footer {
-		@include respond-to(dekstop) {
-			background: $sec-background-color;
-			padding: 60px 0;
-		}
-		.footer__container {
-			@include respond-to(dekstop) {
-				display: flex;
-				align-items: baseline;
-			}
-		}
-		.footer__logo {
-			@include respond-to(dekstop) {
-				margin-right: 70px;
-				font-family: "Raleway", sans-serif;
-				font-style: normal;
-				font-weight: bold;
-				font-size: 26px;
-				line-height: 1.2;
-				color: $active-color;
-				letter-spacing: 0.03em;
-			}
-		}
-		.footer__logo__color {
-			@include respond-to(dekstop) {
-				display: inline-block;
-				color: #fff;
-			}
-		}
-		.footer__title {
-			@include respond-to(dekstop) {
-				font-style: normal;
-				font-weight: bold;
-				font-size: 14px;
-				line-height: 1.14;
-				letter-spacing: 0.03em;
-				text-transform: uppercase;
-				color: #ffffff;
-			}
-		}
-		.footer__social-links {
-			@include respond-to(dekstop) {
-				display: flex;
-				justify-content: center;
-				&:not(:last-child) {
-					margin-right: 10px;
-				}
-			}
-		}
-
-		.footer__social-networks {
-			@include respond-to(dekstop) {
-				margin-left: 70px;
-			}
-		}
-		.footer__network-link {
-			@include respond-to(dekstop) {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				width: 44px;
-				height: 44px;
-				border-radius: 50%;
-				background: rgba(255, 255, 255, 0.1);
-				fill: #fff;
-				&:hover {
-					background-color: $active-color;
-					transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-				}
-			}
-		}
-		.footer__icons {
-			@include respond-to(dekstop) {
-				display: flex;
-				margin-top: 20px;
-			}
 		}
 	}
 

@@ -1,13 +1,10 @@
 .mission__section {
-	@include respond-to(mobile) {
-		display: none;
-	}
-}
-.mission__section {
+	display: none;
 	@include respond-to(dekstop) {
 		display: block;
 	}
 }
+
 .mission {
 	@include respond-to(dekstop) {
 		display: flex;

@@ -1,35 +1,36 @@
 .hero {
-	@include respond-to(mobile) {
-		background-color: $sec-background-color;
-		margin: 0 auto;
-		padding: 200px 0;
-		background-color: #c4c4c4;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		&__title {
-			font-weight: 900;
-			font-size: 26px;
-			line-height: 42px;
-			text-align: center;
-			letter-spacing: 0.06em;
-			text-transform: uppercase;
-			color: #ffffff;
-		}
-		&__button {
-			font-weight: bold;
-			font-size: 16px;
-			line-height: 1.9;
-			color: #fff;
-			background-color: #188ce8;
-			display: block;
-			margin: 0 auto;
-			border-radius: 4px;
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-			margin-top: 44px;
-			padding: 10px 32px;
-		}
-	}
+	background-color: $sec-background-color;
+	margin: 0 auto;
+	padding: 200px 0;
+	background-color: #c4c4c4;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.hero__title {
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.hero__button {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.9;
+	color: #fff;
+	background-color: #188ce8;
+	display: block;
+	margin: 0 auto;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	margin-top: 44px;
+	padding: 10px 32px;
+}
+
+.hero {
 	@include respond-to(dekstop) {
 		background-color: $sec-background-color;
 		padding: 200px 0;
@@ -39,27 +40,32 @@
 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img18.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		&__title {
-			font-weight: 900;
-			font-size: 44px;
-			line-height: 1.4;
-			color: #ffffff;
-			letter-spacing: 0.06em;
-			max-width: 650px;
-			margin: 0 auto;
-		}
-		&__button {
-			font-weight: bold;
-			font-size: 16px;
-			line-height: 1.9;
-			color: #fff;
-			background-color: #188ce8;
-			display: block;
-			margin: 0 auto;
-			border-radius: 4px;
-			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-			margin-top: 44px;
-			padding: 10px 32px;
-		}
+	}
+}
+.hero__title {
+	@include respond-to(dekstop) {
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 1.4;
+		color: #ffffff;
+		letter-spacing: 0.06em;
+		max-width: 650px;
+
+		margin: 0 auto;
+	}
+}
+.hero__button {
+	@include respond-to(dekstop) {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 1.9;
+		color: #fff;
+		background-color: #188ce8;
+		display: block;
+		margin: 0 auto;
+		border-radius: 4px;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		margin-top: 44px;
+		padding: 10px 32px;
 	}
 }
