@@ -30,10 +30,17 @@
 }
 .benefits__description {
 	@include respond-to(tablet) {
-		margin-right: 30px;
-		flex-basis: calc((100% - 30px) / 4);
+		flex-basis: calc((100% - 4 * 30px) / 2);
+		height: auto;
+		justify-content: center;
 	}
 }
+.benefits__description:nth-child(odd) {
+	@include respond-to(tablet) {
+		margin-right: 30px;
+	}
+}
+
 .benefits__icon {
 	display: flex;
 	justify-content: center;

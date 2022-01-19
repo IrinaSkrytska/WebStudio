@@ -675,10 +675,20 @@ header {
 
 @media screen and (min-width: 768px) {
   .benefits__description {
+    -webkit-flex-basis: -webkit-calc((100% - 4 * 30px) / 2);
+        -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
+            flex-basis: calc((100% - 4 * 30px) / 2);
+    height: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__description:nth-child(odd) {
     margin-right: 30px;
-    -webkit-flex-basis: -webkit-calc((100% - 30px) / 4);
-        -ms-flex-preferred-size: calc((100% - 30px) / 4);
-            flex-basis: calc((100% - 30px) / 4);
   }
 }
 
@@ -1743,9 +1753,9 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.2;
   color: #757575;
@@ -1974,6 +1984,7 @@ img {
 }
 
 .overlay {
+  overflow-y: scroll;
   position: absolute;
   height: 100%;
   width: 100%;
