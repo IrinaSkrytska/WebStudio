@@ -1,6 +1,12 @@
 .customers {
 	display: flex;
 	flex-wrap: wrap;
+	@include respond-to(tablet) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-basis: calc((100% -30 px) / 6);
+	}
 	@include respond-to(dekstop) {
 		display: flex;
 		flex-wrap: nowrap;

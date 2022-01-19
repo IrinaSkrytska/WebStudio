@@ -2,6 +2,18 @@
 	display: flex;
 	flex-direction: column;
 	margin-left: 0 auto;
+	@include respond-to(tablet) {
+		margin: auto;
+		flex-direction: row;
+		display: flex;
+		flex-wrap: wrap;
+		flex-basis: calc((100% - 30px) / 4);
+	}
+	@include respond-to(dekstop) {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
 }
 .benefits__title {
 	text-align: center;
@@ -25,19 +37,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	height: 120px;
 	background-color: #f5f4fa;
 	margin-bottom: 15px;
-}
-
-.benefits__thumb {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: row;
 	}
 }
+
 .benefits__title {
 	@include respond-to(dekstop) {
 		text-align: start;

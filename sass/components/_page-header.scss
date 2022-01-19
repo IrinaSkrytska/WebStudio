@@ -1,5 +1,5 @@
 .page-header__link {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		font-style: normal;
 		font-weight: 500;
 		font-size: 14px;
@@ -54,7 +54,7 @@
 	}
 }
 .page-header__contact {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		font-style: normal;
 		font-weight: 500;
 		font-size: 14px;
@@ -91,6 +91,10 @@
 	display: flex;
 	flex-direction: column-reverse;
 	padding-left: 40px;
+	@include respond-to(tablet) {
+		display: flex;
+		flex-direction: row;
+	}
 }
 .page-header__main-contacts:first-child {
 	margin: 0;
@@ -101,6 +105,9 @@ header {
 
 .page-header__contact-icon {
 	display: none;
+	@include respond-to(tablet) {
+		display: block;
+	}
 }
 .page-header {
 	position: relative;
@@ -127,6 +134,9 @@ header {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	margin-left: 10px;
 	margin-right: 10px;
+	@include respond-to(tablet) {
+		display: none;
+	}
 }
 .page-header__network {
 	padding-bottom: 48px;
@@ -135,31 +145,31 @@ header {
 	margin-bottom: 60px;
 }
 .page-header__nav {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		display: flex;
 		justify-content: space-between;
 	}
 }
 .page-header__main-links {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		display: flex;
 		justify-content: space-between;
 	}
 }
 .page-header__main-contacts {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		display: flex;
 		justify-content: space-between;
 	}
 }
 .page-header__container {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		display: flex;
 		justify-content: space-between;
 	}
 }
 .page-header__link {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		font-style: normal;
 		font-weight: 500;
 		font-size: 14px;
@@ -176,12 +186,12 @@ header {
 	}
 }
 .page-header__main-links {
-	margin: 0;
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
+		margin: 0;
 	}
 }
 .page-header__link__underline::after {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		content: "";
 		width: 48px;
 		height: 4px;
@@ -192,7 +202,7 @@ header {
 	}
 }
 .page-header__contact {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		font-style: normal;
 		font-weight: 500;
 		font-size: 14px;
@@ -210,18 +220,18 @@ header {
 }
 
 .page-header__main-contacts:first-child {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		margin: 0;
 	}
 }
 header {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		border-bottom: 1px solid #ececec;
 	}
 }
 
 .page-header__contact-icon {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		fill: currentColor;
 		margin-right: 10px;
 	}

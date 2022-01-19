@@ -3,6 +3,9 @@
 }
 
 .menu-button {
+	@include respond-to(tablet) {
+		display: none;
+	}
 	display: inline-flex;
 	border: none;
 	background-color: transparent;
@@ -29,6 +32,9 @@
 }
 
 .menu__container {
+	@include respond-to(tablet) {
+		display: none;
+	}
 	width: 100vw;
 	height: 100vh;
 	display: none;
@@ -41,6 +47,9 @@
 }
 
 .menu__container.is-open {
+	@include respond-to(tablet) {
+		display: none;
+	}
 	display: block;
 	position: fixed;
 	overflow-y: scroll;
