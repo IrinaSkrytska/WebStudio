@@ -16,7 +16,7 @@ body {
 	padding: 0 15px;
 	margin: 0 auto;
 	@include respond-to(mobile) {
-		width: 480px;
+		max-width: 480px;
 	}
 	@include respond-to(dekstop) {
 		width: 1200px;

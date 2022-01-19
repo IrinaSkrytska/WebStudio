@@ -1,13 +1,12 @@
 .portfolio__buttons {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.6;
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		display: flex;
 		font-weight: 500;
 		font-size: 16px;

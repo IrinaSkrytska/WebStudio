@@ -3,11 +3,8 @@
 	flex-direction: column;
 	margin-left: 0 auto;
 	@include respond-to(tablet) {
-		margin: auto;
-		flex-direction: row;
 		display: flex;
 		flex-wrap: wrap;
-		flex-basis: calc((100% - 30px) / 4);
 	}
 	@include respond-to(dekstop) {
 		display: flex;
@@ -31,7 +28,9 @@
 	margin-bottom: 30px;
 }
 .benefits__description {
-	max-width: 450px;
+	@include respond-to(tablet) {
+		flex-basis: calc((100% - 30px) / 4);
+	}
 }
 .benefits__icon {
 	display: flex;
