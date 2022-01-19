@@ -1,5 +1,9 @@
 .team {
 	margin-top: 30px;
+	@include respond-to(tablet) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 .team__thumb {
 	margin-left: 15px;
@@ -12,9 +16,17 @@
 	background-color: #fff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
+	@include respond-to(tablet) {
+		margin-bottom: 30px;
+		flex-basis: calc((100% - 4 * 30px) / 2);
+		height: auto;
+		justify-content: center;
+	}
 }
-.team__members:not(:last-child) {
-	margin-bottom: 30px;
+.team__members:nth-child(odd) {
+	@include respond-to(tablet) {
+		margin-right: 30px;
+	}
 }
 .team__thumb {
 	padding-top: 30px;
