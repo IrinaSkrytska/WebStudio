@@ -1,14 +1,12 @@
 .portfolio__header {
-	@include respond-to(mobile) {
-		overflow: hidden;
-		opacity: 0;
-		width: 1px;
-		height: 1px;
-		margin-bottom: -1px;
-		border: 0;
-		clip: rect(0 0 0 0);
-		position: relative;
-	}
+	overflow: hidden;
+	opacity: 0;
+	width: 1px;
+	height: 1px;
+	margin-bottom: -1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	position: relative;
 }
 .page-header__link__line::after {
 	@include respond-to(dekstop) {

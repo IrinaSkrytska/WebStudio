@@ -26,6 +26,7 @@
 	line-height: 47px;
 	text-align: center;
 	letter-spacing: 0.02em;
+	padding-top: 48px;
 	@include respond-to(tablet) {
 		display: flex;
 		flex-direction: row;
