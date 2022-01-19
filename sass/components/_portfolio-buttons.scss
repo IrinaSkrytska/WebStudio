@@ -8,6 +8,7 @@
 	margin-bottom: 50px;
 	@include respond-to(tablet) {
 		display: flex;
+		flex-direction: row;
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 1.6;
@@ -32,21 +33,5 @@
 		background-color: $active-color;
 		color: #fff;
 		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	@include respond-to(dekstop) {
-		font-family: Roboto;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 1.6;
-		letter-spacing: 0.03em;
-		padding: 6px 22px;
-		border-radius: 4px;
-		margin-right: 8px;
-		&:hover {
-			background-color: $active-color;
-			color: #fff;
-			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		}
 	}
 }
