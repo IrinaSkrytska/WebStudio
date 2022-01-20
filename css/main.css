@@ -118,10 +118,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .header__logo {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -163,10 +160,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header__container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 
@@ -318,10 +315,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header__main-contacts {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;

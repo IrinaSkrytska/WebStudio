@@ -1,6 +1,6 @@
 .page-header__container {
 	@include respond-to(tablet) {
-		display: flex;
+		display: inline-flex;
 	}
 }
 .page-header__link {
@@ -98,7 +98,7 @@
 	flex-direction: column-reverse;
 	padding-left: 40px;
 	@include respond-to(tablet) {
-		display: flex;
+		display: inline-flex;
 		flex-direction: column;
 	}
 }
