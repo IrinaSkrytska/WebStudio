@@ -32,9 +32,6 @@
 }
 
 .menu__container {
-	@include respond-to(tablet) {
-		display: none;
-	}
 	width: 100vw;
 	height: 100vh;
 	display: none;
@@ -44,21 +41,25 @@
 	width: 100%;
 	background-color: #fff;
 	z-index: 3;
+	@include respond-to(tablet) {
+		position: relative;
+		width: auto;
+		height: auto;
+		display: inline-block;
+	}
 }
 
 .menu__container.is-open {
-	@include respond-to(tablet) {
-		display: none;
-	}
 	display: block;
 	position: fixed;
 	overflow-y: scroll;
+	@include respond-to(tablet) {
+		display: inline-block;
+		position: relative;
+		overflow-y: hidden;
+	}
 }
 
 .menu-button:focus {
 	fill: #2196f3;
-}
-
-.contacts__link {
-	margin-bottom: 302px;
 }

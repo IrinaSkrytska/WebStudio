@@ -45,9 +45,15 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    max-width: 480px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 768px;
   }
 }
 
@@ -112,14 +118,10 @@ body {
 
 @media screen and (min-width: 768px) {
   .header__logo {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -160,6 +162,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .page-header__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .page-header__link {
     font-style: normal;
     font-weight: 500;
@@ -173,6 +184,7 @@ body {
     margin-right: 50px;
     padding: 32px 0;
     position: relative;
+    color: #212121;
   }
   .page-header__link:hover {
     color: #2196f3;
@@ -216,7 +228,7 @@ body {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin: 0;
+    padding-top: 0;
     padding-left: 40px;
     font-weight: 500;
     font-size: 40px;
@@ -224,10 +236,6 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
   }
-}
-
-.page-header__link {
-  color: #212121;
 }
 
 @media screen and (min-width: 1200px) {
@@ -289,6 +297,12 @@ body {
   padding-bottom: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .phone-communication {
+    padding-bottom: 0;
+  }
+}
+
 .page-header__main-contacts {
   display: -webkit-box;
   display: -webkit-flex;
@@ -308,11 +322,11 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -342,6 +356,12 @@ header {
   padding-bottom: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header__main-link:not(:last-child) {
+    padding-bottom: 0;
+  }
+}
+
 .page-header__link:focus {
   color: #2196f3;
 }
@@ -352,6 +372,12 @@ header {
   display: -ms-flexbox;
   display: flex;
   padding-left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__networks {
+    display: none;
+  }
 }
 
 .page-header__network-link {
@@ -379,8 +405,20 @@ header {
   padding-bottom: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header__network {
+    padding-bottom: 0;
+  }
+}
+
 .mail-communication {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .mail-communication {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -411,19 +449,6 @@ header {
 
 @media screen and (min-width: 768px) {
   .page-header__main-contacts {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -519,6 +544,16 @@ header {
   .page-header__contact-icon {
     fill: currentColor;
     margin-right: 10px;
+  }
+}
+
+.contacts__link {
+  margin-bottom: 302px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    margin-bottom: 0;
   }
 }
 
@@ -2163,7 +2198,10 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu__container {
-    display: none;
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline-block;
   }
 }
 
@@ -2175,15 +2213,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .menu__container.is-open {
-    display: none;
+    display: inline-block;
+    position: relative;
+    overflow-y: hidden;
   }
 }
 
 .menu-button:focus {
   fill: #2196f3;
-}
-
-.contacts__link {
-  margin-bottom: 302px;
 }
 /*# sourceMappingURL=main.css.map */
