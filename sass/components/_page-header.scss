@@ -216,7 +216,6 @@ header {
 }
 .page-header__contact {
 	padding: 32px 0;
-	margin-left: 50px;
 	@include respond-to(tablet) {
 		font-style: normal;
 		font-weight: 500;
