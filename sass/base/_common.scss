@@ -5,11 +5,9 @@ body {
 	color: $main-color;
 }
 .section {
+	padding: 60px 0;
 	@include respond-to(dekstop) {
 		padding: 94px 0;
-	}
-	@include respond-to(mobile) {
-		padding: 60px 0;
 	}
 }
 .container {

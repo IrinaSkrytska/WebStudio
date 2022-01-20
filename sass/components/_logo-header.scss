@@ -16,7 +16,7 @@
 		color: $main-color;
 	}
 	@include respond-to(tablet) {
-		display: inline-block;
+		margin: 0;
 		font-family: "Raleway", sans-serif;
 		font-style: normal;
 		font-weight: bold;

@@ -45,7 +45,8 @@
 		position: relative;
 		width: auto;
 		height: auto;
-		display: inline-block;
+		display: flex;
+		align-items: center;
 	}
 }
 
