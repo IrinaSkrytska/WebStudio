@@ -9,7 +9,7 @@
 	position: relative;
 }
 .page-header__link__line::after {
-	@include respond-to(dekstop) {
+	@include respond-to(tablet) {
 		content: "";
 		position: absolute;
 		width: 78px;

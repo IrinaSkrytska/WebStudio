@@ -1,5 +1,8 @@
 .page-header__container {
 	@include respond-to(tablet) {
+		display: inline-flex;
+	}
+	@include respond-to(dekstop) {
 		display: flex;
 	}
 }
@@ -73,24 +76,31 @@
 		}
 	}
 }
-.phone {
+
+.mail-communication {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 0.02em;
+	margin-bottom: 60px;
+	@include respond-to(tablet) {
+		margin-bottom: 0;
+	}
+}
+.phone-communication {
+	padding-bottom: 32px;
 	font-weight: 500;
 	font-size: 34px;
 	line-height: 40px;
 	letter-spacing: 0.02em;
 	color: #2196f3;
-}
-.mail {
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 28px;
-	letter-spacing: 0.02em;
-	color: #757575;
-}
-.phone-communication {
-	padding-bottom: 32px;
 	@include respond-to(tablet) {
 		padding-bottom: 0;
+		margin-top: 10px;
+	}
+	@include respond-to(dekstop) {
+		margin-top: 0;
+		margin-left: 30px;
 	}
 }
 .page-header__main-contacts {
@@ -101,6 +111,12 @@
 		padding: 0;
 		display: inline-flex;
 		flex-direction: column;
+		margin: auto;
+	}
+	@include respond-to(dekstop) {
+		padding: 0;
+		display: inline-flex;
+		flex-direction: row;
 	}
 }
 .page-header__main-contacts:first-child {
@@ -157,12 +173,7 @@ header {
 		padding-bottom: 0;
 	}
 }
-.mail-communication {
-	margin-bottom: 60px;
-	@include respond-to(tablet) {
-		margin-bottom: 0;
-	}
-}
+
 .page-header__nav {
 	@include respond-to(tablet) {
 		display: flex;
@@ -179,6 +190,7 @@ header {
 	@include respond-to(tablet) {
 		display: flex;
 		justify-content: space-between;
+		margin-left: 84px;
 	}
 }
 .page-header__link {

@@ -24,7 +24,7 @@
 		}
 	}
 	@include respond-to(tablet) {
-		height: auto;
+		height: 92px;
 		flex-basis: calc((100% - 3 * 30px) / 3);
 	}
 }

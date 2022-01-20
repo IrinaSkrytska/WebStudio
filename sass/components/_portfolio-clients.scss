@@ -2,7 +2,6 @@
 	@include respond-to(dekstop) {
 		display: flex;
 		flex-wrap: wrap;
-		flex-basis: calc(100% / 3 - 30px);
 	}
 	@include respond-to(tablet) {
 		display: flex;
@@ -29,6 +28,11 @@
 	}
 	@include respond-to(tablet) {
 		flex-basis: calc((100% - 30px) / 2);
+	}
+}
+.clients__meta {
+	@include respond-to(dekstop) {
+		flex-basis: calc(100% / 3 - 30px);
 	}
 }
 .clients__meta:nth-child(odd) {
@@ -77,6 +81,9 @@ img {
 	transform: translateY(101%);
 	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	padding: 60px 24px;
+	@include respond-to(dekstop) {
+		overflow-y: hidden;
+	}
 }
 .box {
 	position: relative;

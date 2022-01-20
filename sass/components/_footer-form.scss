@@ -36,6 +36,7 @@
 
 .footer__form {
 	margin-top: 20px;
+	@include respond-to(dekstop);
 }
 .footer__form-title {
 	text-align: center;
@@ -45,6 +46,9 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: #ffffff;
+	@include respond-to(dekstop) {
+		text-align: start;
+	}
 }
 .footer__e-mail-form {
 	display: flex;
@@ -53,6 +57,8 @@
 	@include respond-to(dekstop) {
 		display: flex;
 		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
 	}
 }
 .mail-input {
@@ -65,6 +71,12 @@
 	margin-right: 12px;
 	padding: 15px 0 15px 16px;
 	margin-bottom: 10px;
+	@include respond-to(tablet) {
+		width: 450px;
+	}
+	@include respond-to(dekstop) {
+		width: 358px;
+	}
 }
 .subscribe-button {
 	align-items: center;

@@ -4,6 +4,10 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+	@include respond-to(dekstop) {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 }
 .team__thumb {
 	margin-left: 15px;
