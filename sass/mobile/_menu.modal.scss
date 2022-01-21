@@ -21,6 +21,7 @@
 
 .menu-button.is-open .cross {
 	display: block;
+	position: fixed;
 }
 
 .menu-button.is-open .menu {
@@ -46,9 +47,10 @@
 	padding-left: 40px;
 	@include respond-to(tablet) {
 		padding-top: 0;
+		padding-left: 0;
 		position: relative;
 		padding-bottom: 0;
-		width: auto;
+		width: 100%;
 		height: auto;
 		display: flex;
 		align-items: center;
@@ -56,9 +58,11 @@
 }
 
 .menu__container.is-open {
-	display: block;
+	display: flex;
 	position: fixed;
 	overflow-y: scroll;
+	justify-content: space-between;
+	flex-direction: column;
 	@include respond-to(tablet) {
 		display: inline-block;
 		position: relative;
