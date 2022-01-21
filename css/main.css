@@ -216,13 +216,11 @@ body {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 40px;
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 48px;
 }
 
 @media screen and (min-width: 768px) {
@@ -236,7 +234,6 @@ body {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-top: 0;
     padding-left: 40px;
     font-weight: 500;
     font-size: 40px;
@@ -442,16 +439,6 @@ header {
 @media screen and (min-width: 768px) {
   .page-header__network:not(:last-child)::after {
     display: none;
-  }
-}
-
-.page-header__network {
-  padding-bottom: 48px;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__network {
-    padding-bottom: 0;
   }
 }
 
@@ -1435,7 +1422,6 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 70px;
   }
 }
 
@@ -2381,11 +2367,16 @@ img {
   width: 100%;
   background-color: #fff;
   z-index: 3;
+  padding-bottom: 48px;
+  padding-top: 48px;
+  padding-left: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .menu__container {
+    padding-top: 0;
     position: relative;
+    padding-bottom: 0;
     width: auto;
     height: auto;
     display: -webkit-box;
