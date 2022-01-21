@@ -44,7 +44,7 @@
 	margin-bottom: 60px;
 	@include respond-to(tablet) {
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		margin-left: 70px;
 	}
 	@include respond-to(dekstop) {
