@@ -1507,6 +1507,9 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-align: baseline;
     -webkit-align-items: baseline;
         -ms-flex-align: baseline;
@@ -1761,6 +1764,7 @@ header {
 @media screen and (min-width: 768px) {
   .mail-input {
     width: 450px;
+    margin-bottom: 30px;
   }
 }
 

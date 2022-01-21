@@ -73,6 +73,7 @@
 	margin-bottom: 10px;
 	@include respond-to(tablet) {
 		width: 450px;
+		margin-bottom: 30px;
 	}
 	@include respond-to(dekstop) {
 		width: 358px;
