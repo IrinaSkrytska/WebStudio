@@ -234,7 +234,6 @@ body {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-left: 40px;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
@@ -268,7 +267,6 @@ body {
     line-height: 1.14;
     color: #757575;
     padding: 32px 0;
-    margin-left: 50px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -337,28 +335,31 @@ body {
   -webkit-flex-direction: column-reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  padding-left: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .page-header__main-contacts {
     padding: 0;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-header__main-contacts {
     padding: 0;
+    padding-left: auto;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
     display: -ms-inline-flexbox;
@@ -412,7 +413,6 @@ header {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -465,20 +465,6 @@ header {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-header__main-contacts {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 84px;
   }
 }
 
