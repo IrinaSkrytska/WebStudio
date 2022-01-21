@@ -17,14 +17,15 @@
 		margin-right: 50px;
 		padding: 32px 0;
 		position: relative;
-		color: #212121;
 		&:hover {
 			color: $active-color;
 			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
 }
-
+.page-header__link {
+	color: #212121;
+}
 .page-header__main-links {
 	display: flex;
 	flex-direction: column;
@@ -60,6 +61,7 @@
 	}
 }
 .page-header__contact {
+	color: $active-color;
 	@include respond-to(tablet) {
 		font-style: normal;
 		font-weight: 500;
@@ -76,7 +78,9 @@
 		}
 	}
 }
-
+.mail {
+	color: #757575;
+}
 .mail-communication {
 	font-weight: 500;
 	font-size: 24px;

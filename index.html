@@ -41,7 +41,7 @@
 					</nav>
 					<ul class="page-header__main-contacts">
 						<li class="page-header__communication mail-communication">
-							<a href="mailto:info@devstudio.com" class="page-header__contact">
+							<a href="mailto:info@devstudio.com" class="page-header__contact mail">
 								<svg class="page-header__contact-icon" width="16" height="12">
 									<use href="./images/sprite.svg#icon-envelope"></use>
 								</svg>
@@ -138,19 +138,28 @@
 					<ul class="mission">
 						<li class="mission__meta">
 							<div class="mission__image">
-								<img src="./images/img(1).jpg" alt="Комп'ютер с кодом" width="370" height="294" />
+								<picture>	
+								<source media="(min-width: 1200px)" srcset="./images/dekstop-apps@1.jpg 1x, ./images/cards/dekstop-apps@2.jpg 2x">
+								<img src="./images/img(1).jpg">
+							</picture>
 								<h3 class="mission__title">ДЕКСТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
 							</div>
 						</li>
 						<li class="mission__meta">
 							<div class="mission__image">
-								<img src="./images/img(2).jpg" alt="Разработка на телефоне и комп'ютере" width="370" height="294" />
+								<picture>	
+								<source media="(min-width: 1200px)" srcset="./images/mobile-apps@1.jpg 1x, ./images/cards/mobile-apps@2.jpg 2x">
+								<img src="./images/img(2).jpg">
+							</picture>
 								<h3 class="mission__title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
 							</div>
 						</li>
 						<li class="mission__meta">
 							<div class="mission__image">
-								<img src="./images/img(3).jpg" alt="Планшет и ручка" width="370" height="294" />
+								<picture>	
+								<source media="(min-width: 1200px)" srcset="./images/design@1.jpg 1x, ./images/cards/design@2.jpg 2x">
+								<img src="./images/img(3).jpg">
+							</picture>	
 								<h3 class="mission__title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
 							</div>
 						</li>
@@ -163,7 +172,12 @@
 					<h2 class="section__title">Наша команда</h2>
 					<ul class="team">
 						<li class="team__members">
-							<img class="team__member-image" src="./images/img(5).jpg" alt="Дизайнер продуктов" />
+							<picture>	
+								<source media="(min-width: 1200px)" srcset="./images/igor-dekstop@1.jpg 1x, ./images/igor-dekstop@2.jpg 2x">
+								<source media="(min-width: 768px)" srcset="./images/igor-tablet@1.jpg 1x, ./images/igor-tablet@2.jpg 2x">
+								<source media="(min-width: 320px)" srcset="./images/igor-mob@1.jpg 1x, ./images/igor-mob@2.jpg 2x">
+								<img src="./images/img(5).jpg">
+							</picture>
 							<div class="team__thumb">
 								<h3 class="team__name">Игорь Демьяненко</h3>
 								<p class="team__job">Product Designer</p>
@@ -200,7 +214,12 @@
 							</div>
 						</li>
 						<li class="team__members">
-							<img class="team__member-image" src="./images/img(6).jpg" alt="Фронт-енд разработчик" />
+							<picture>	
+								<source media="(min-width: 1200px)" srcset="./images/olga-dekstop@1.jpg 1x, ./images/olga-dekstop@2.jpg 2x">
+								<source media="(min-width: 768px)" srcset="./images/olga-tablet@1.jpg 1x, ./images/olga-tablet@2.jpg 2x">
+								<source media="(min-width: 320px)" srcset="./images/olga-mob@1.jpg 1x, ./images/olga-mob@2.jpg 2x">
+								<img src="./images/img(6).jpg">
+							</picture>
 							<div class="team__thumb">
 								<h3 class="team__name">Ольга Репина</h3>
 								<p class="team__job">Frontend Developer</p>
@@ -237,7 +256,12 @@
 							</div>
 						</li>
 						<li class="team__members">
-							<img class="team__member-image" src="./images/img(7).jpg" alt="Маркетолог"  />
+							<picture>	
+								<source media="(min-width: 1200px)" srcset="./images/nikol-dekstop@1.jpg 1x, ./images/nikol-dekstop@2.jpg 2x">
+								<source media="(min-width: 768px)" srcset="./images/nikol-tablet@1.jpg 1x, ./images/nikol-tablet@2.jpg 2x">
+								<source media="(min-width: 320px)" srcset="./images/nikol-mob@1.jpg 1x, ./images/nikol-mob@2.jpg 2x">
+								<img src="./images/img(7).jpg">
+							</picture>
 							<div class="team__thumb">
 								<h3 class="team__name">Николай Тарасов</h3>
 								<p class="team__job">Marketing</p>
@@ -274,7 +298,13 @@
 							</div>
 						</li>
 						<li class="team__members">
-							<img class="team__member-image" src="./images/img(8).jpg" alt="Дизайнер"/>
+							<picture>	
+								<source media="(min-width: 1200px)" srcset="./images/michael-dekstop@1.jpg 1x, ./images/michael-dekstop@2.jpg 2x">
+								<source media="(min-width: 768px)" srcset="./images/michael-tablet@1.jpg 1x, ./images/michael-tablet@2.jpg 2x">
+								<source media="(min-width: 320px)" srcset="./images/michael-mob@1.jpg 1x, ./images/michael-mob@2.jpg 2x">
+								<img src="./images/img(7).jpg">
+							</picture>
+							
 							<div class="team__thumb">
 								<h3 class="team__name">Михаил Ермаков</h3>
 								<p class="team__job">UI Designer</p>
