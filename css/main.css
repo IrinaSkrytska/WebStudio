@@ -1165,9 +1165,9 @@ header {
 .customers__meta {
   margin: 15px;
   height: 92px;
-  -webkit-flex-basis: -webkit-calc((100% - 90px) / 2);
-      -ms-flex-preferred-size: calc((100% - 90px) / 2);
-          flex-basis: calc((100% - 90px) / 2);
+  -webkit-flex-basis: -webkit-calc((100% - 60px) / 2);
+      -ms-flex-preferred-size: calc((100% - 60px) / 2);
+          flex-basis: calc((100% - 60px) / 2);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1183,9 +1183,9 @@ header {
 
 @media screen and (min-width: 768px) {
   .customers__meta {
-    -webkit-flex-basis: -webkit-calc((100% - 120px) / 3);
-        -ms-flex-preferred-size: calc((100% - 120px) / 3);
-            flex-basis: calc((100% - 120px) / 3);
+    -webkit-flex-basis: -webkit-calc((100% - 90px) / 3);
+        -ms-flex-preferred-size: calc((100% - 90px) / 3);
+            flex-basis: calc((100% - 90px) / 3);
   }
 }
 

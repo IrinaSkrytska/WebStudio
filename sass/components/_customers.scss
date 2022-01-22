@@ -9,7 +9,7 @@
 .customers__meta {
 	margin: 15px;
 	height: 92px;
-	flex-basis: calc((100% - 90px) / 2);
+	flex-basis: calc((100% - 60px) / 2);
 	@include respond-to(dekstop) {
 		margin-top: 0;
 		width: 170px;
@@ -19,7 +19,7 @@
 		}
 	}
 	@include respond-to(tablet) {
-		flex-basis: calc((100% - 120px) / 3);
+		flex-basis: calc((100% - 90px) / 3);
 	}
 }
 .section-customers {
