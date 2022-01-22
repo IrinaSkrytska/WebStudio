@@ -1144,6 +1144,7 @@ header {
 }
 
 .customers {
+  margin: -15px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1153,29 +1154,8 @@ header {
           flex-wrap: wrap;
 }
 
-@media screen and (min-width: 768px) {
-  .customers {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .customers {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
@@ -1183,11 +1163,11 @@ header {
 }
 
 .customers__meta {
-  margin-top: 30px;
+  margin: 15px;
   height: 92px;
-  -webkit-flex-basis: -webkit-calc((100% - 30px) / 2);
-      -ms-flex-preferred-size: calc((100% - 30px) / 2);
-          flex-basis: calc((100% - 30px) / 2);
+  -webkit-flex-basis: -webkit-calc((100% - 90px) / 2);
+      -ms-flex-preferred-size: calc((100% - 90px) / 2);
+          flex-basis: calc((100% - 90px) / 2);
 }
 
 @media screen and (min-width: 1200px) {
@@ -1203,39 +1183,14 @@ header {
 
 @media screen and (min-width: 768px) {
   .customers__meta {
-    height: 92px;
-    -webkit-flex-basis: -webkit-calc((100% - 3 * 30px) / 3);
-        -ms-flex-preferred-size: calc((100% - 3 * 30px) / 3);
-            flex-basis: calc((100% - 3 * 30px) / 3);
+    -webkit-flex-basis: -webkit-calc((100% - 120px) / 3);
+        -ms-flex-preferred-size: calc((100% - 120px) / 3);
+            flex-basis: calc((100% - 120px) / 3);
   }
 }
 
-.customers__meta:nth-child(2n + 1) {
-  margin-right: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .customers__meta {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .customers__meta:nth-child(3) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .customers__meta:nth-child(3) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .customers__meta:nth-child(6) {
-    margin-right: 0;
-  }
+.section-customers {
+  margin-bottom: 30px;
 }
 
 .customers__meta .customers__link {

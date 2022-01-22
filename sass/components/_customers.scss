@@ -1,20 +1,15 @@
 .customers {
+	margin: -15px;
 	display: flex;
 	flex-wrap: wrap;
-	@include respond-to(tablet) {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
 	@include respond-to(dekstop) {
-		display: flex;
 		flex-wrap: nowrap;
 	}
 }
 .customers__meta {
-	margin-top: 30px;
+	margin: 15px;
 	height: 92px;
-	flex-basis: calc((100% - 30px) / 2);
+	flex-basis: calc((100% - 90px) / 2);
 	@include respond-to(dekstop) {
 		margin-top: 0;
 		width: 170px;
@@ -24,30 +19,11 @@
 		}
 	}
 	@include respond-to(tablet) {
-		height: 92px;
-		flex-basis: calc((100% - 3 * 30px) / 3);
+		flex-basis: calc((100% - 120px) / 3);
 	}
 }
-.customers__meta:nth-child(2n + 1) {
-	margin-right: 30px;
-}
-.customers__meta {
-	@include respond-to(tablet) {
-		margin-right: 30px;
-	}
-}
-.customers__meta:nth-child(3) {
-	@include respond-to(tablet) {
-		margin-right: 0;
-	}
-	@include respond-to(dekstop) {
-		margin-right: 30px;
-	}
-}
-.customers__meta:nth-child(6) {
-	@include respond-to(tablet) {
-		margin-right: 0;
-	}
+.section-customers {
+	margin-bottom: 30px;
 }
 .customers__meta .customers__link {
 	display: flex;
