@@ -736,14 +736,14 @@ header {
 
 @media screen and (min-width: 1200px) {
   .benefits__thumb {
+    margin: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 
@@ -773,6 +773,12 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__description {
+    margin: 0;
   }
 }
 
@@ -816,7 +822,6 @@ header {
 
 @media screen and (min-width: 1200px) {
   .benefits__description {
-    margin-right: 30px;
     width: 270px;
   }
 }
@@ -833,8 +838,8 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-  .benefits__description:last-child {
-    margin-right: 0;
+  .benefits__description:not(:last-child) {
+    margin-right: 30px;
   }
 }
 

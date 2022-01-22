@@ -5,8 +5,9 @@
 		margin: -15px;
 	}
 	@include respond-to(dekstop) {
+		margin: 0;
+		display: flex;
 		flex-wrap: nowrap;
-		flex-direction: row;
 	}
 }
 .benefits__title {
@@ -28,6 +29,9 @@
 		margin: 15px;
 		flex-basis: calc((100% - 60px) / 2);
 		justify-content: center;
+	}
+	@include respond-to(dekstop) {
+		margin: 0;
 	}
 }
 .benefits__description:not(:last-child) {
@@ -56,7 +60,6 @@
 }
 .benefits__description {
 	@include respond-to(dekstop) {
-		margin-right: 30px;
 		width: 270px;
 	}
 }
@@ -70,9 +73,9 @@
 		letter-spacing: 0.03em;
 	}
 }
-.benefits__description:last-child {
+.benefits__description:not(:last-child) {
 	@include respond-to(dekstop) {
-		margin-right: 0;
+		margin-right: 30px;
 	}
 }
 .benefits__icon {
