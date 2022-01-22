@@ -1,6 +1,7 @@
 .team {
 	margin-top: 30px;
 	@include respond-to(tablet) {
+		margin: -15px;
 		display: flex;
 		flex-wrap: wrap;
 	}
@@ -8,9 +9,6 @@
 		display: flex;
 		flex-wrap: nowrap;
 	}
-}
-.team__thumb {
-	margin-left: 15px;
 }
 .team__section {
 	background-color: #f5f4fa;
@@ -22,15 +20,10 @@
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 	@include respond-to(tablet) {
+		margin: 15px;
 		margin-bottom: 30px;
-		flex-basis: calc((100% - 4 * 30px) / 2);
-		height: auto;
+		flex-basis: calc((100% - 60px) / 2);
 		justify-content: center;
-	}
-}
-.team__members:nth-child(odd) {
-	@include respond-to(tablet) {
-		margin-right: 30px;
 	}
 }
 .team__thumb {
