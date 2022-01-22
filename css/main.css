@@ -721,41 +721,21 @@ header {
   }
 }
 
-.benefits__thumb {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 @media screen and (min-width: 768px) {
   .benefits__thumb {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .benefits__thumb {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
@@ -769,26 +749,26 @@ header {
 
 .benefits__title {
   text-align: center;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
 }
 
 .benefits__info {
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.8;
   color: #757575;
-  padding-top: 10px;
+  margin-top: 10px;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .benefits__description {
-    -webkit-flex-basis: -webkit-calc((100% - 4 * 30px) / 2);
-        -ms-flex-preferred-size: calc((100% - 4 * 30px) / 2);
-            flex-basis: calc((100% - 4 * 30px) / 2);
+    margin: 15px;
+    -webkit-flex-basis: -webkit-calc((100% - 60px) / 2);
+        -ms-flex-preferred-size: calc((100% - 60px) / 2);
+            flex-basis: calc((100% - 60px) / 2);
     height: auto;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -797,9 +777,13 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .benefits__description:nth-child(odd) {
-    margin-right: 30px;
+.benefits__description:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits__description:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 
@@ -821,19 +805,10 @@ header {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 768px) {
-  .benefits__icon {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .benefits__title {
     text-align: start;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
     margin-right: 30px;
@@ -849,7 +824,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   .benefits__info {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.8;
     color: #757575;

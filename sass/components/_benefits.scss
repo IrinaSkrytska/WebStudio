@@ -1,45 +1,42 @@
 .benefits__thumb {
-	display: flex;
-	flex-direction: column;
 	@include respond-to(tablet) {
 		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
+		margin: -15px;
 	}
 	@include respond-to(dekstop) {
-		display: flex;
 		flex-wrap: nowrap;
 		flex-direction: row;
 	}
 }
 .benefits__title {
 	text-align: center;
-	font-weight: 700px;
+	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.1;
 }
 .benefits__info {
-	font-weight: 400px;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.8;
 	color: $sec-active-color;
-	padding-top: 10px;
+	margin-top: 10px;
 	letter-spacing: 0.03em;
-	margin-bottom: 30px;
 }
 .benefits__description {
 	@include respond-to(tablet) {
-		flex-basis: calc((100% - 4 * 30px) / 2);
+		margin: 15px;
+		flex-basis: calc((100% - 60px) / 2);
 		height: auto;
 		justify-content: center;
 	}
 }
-.benefits__description:nth-child(odd) {
-	@include respond-to(tablet) {
-		margin-right: 30px;
+.benefits__description:not(:last-child) {
+	margin-bottom: 30px;
+	@include respond-to(dekstop) {
+		margin-bottom: 0;
 	}
 }
-
 .benefits__icon {
 	display: flex;
 	justify-content: center;
@@ -47,15 +44,12 @@
 	height: 120px;
 	background-color: #f5f4fa;
 	margin-bottom: 15px;
-	@include respond-to(tablet) {
-		display: flex;
-	}
 }
 
 .benefits__title {
 	@include respond-to(dekstop) {
 		text-align: start;
-		font-weight: 700px;
+		font-weight: 700;
 		font-size: 14px;
 		line-height: 1.1;
 		margin-right: 30px;
@@ -69,7 +63,7 @@
 }
 .benefits__info {
 	@include respond-to(dekstop) {
-		font-weight: 400px;
+		font-weight: 400;
 		font-size: 14px;
 		line-height: 1.8;
 		color: $sec-active-color;
