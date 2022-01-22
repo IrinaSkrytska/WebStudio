@@ -159,10 +159,14 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header__container {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -294,6 +298,18 @@ body {
   color: #757575;
 }
 
+@media screen and (min-width: 768px) {
+  .mail {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail {
+    margin-top: 0;
+  }
+}
+
 .mail-communication {
   font-weight: 500;
   font-size: 24px;
@@ -345,11 +361,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .page-header__main-contacts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -377,7 +388,6 @@ body {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-left: auto;
   }
 }
 
@@ -557,6 +567,20 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .page-header__contacts-networks {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
   header {
     border-bottom: 1px solid #ececec;
   }
@@ -661,10 +685,6 @@ header {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #c4c4c4;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img18.jpg);
-    background-image: -webkit-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img18.jpg);
-    background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img18.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img18.jpg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
@@ -2331,9 +2351,13 @@ img {
   display: none;
 }
 
+.menu-button.menu-button.is-open {
+  position: fixed;
+  top: 10px;
+}
+
 .menu-button.is-open .cross {
   display: block;
-  position: fixed;
 }
 
 .menu-button.is-open .menu {

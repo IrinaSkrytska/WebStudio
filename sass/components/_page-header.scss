@@ -1,6 +1,7 @@
 .page-header__container {
 	@include respond-to(tablet) {
-		display: inline-flex;
+		display: flex;
+		justify-content: space-between;
 	}
 	@include respond-to(dekstop) {
 		display: flex;
@@ -74,6 +75,12 @@
 }
 .mail {
 	color: #757575;
+	@include respond-to(tablet) {
+		margin-top: 10px;
+	}
+	@include respond-to(dekstop) {
+		margin-top: 0;
+	}
 }
 .mail-communication {
 	font-weight: 500;
@@ -105,7 +112,6 @@
 	display: flex;
 	flex-direction: column-reverse;
 	@include respond-to(tablet) {
-		flex-direction: column;
 		display: flex;
 		justify-content: space-between;
 		margin-left: auto;
@@ -114,7 +120,6 @@
 		display: flex;
 		justify-content: space-between;
 		flex-direction: row;
-		margin-left: auto;
 	}
 }
 
@@ -219,6 +224,11 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	@include respond-to(tablet) {
+		display: flex;
+		justify-content: space-between;
+		margin-left: auto;
+	}
 }
 header {
 	@include respond-to(tablet) {

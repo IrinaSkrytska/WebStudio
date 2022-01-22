@@ -17,10 +17,12 @@
 .menu-button .cross {
 	display: none;
 }
-
+.menu-button.menu-button.is-open {
+	position: fixed;
+	top: 10px;
+}
 .menu-button.is-open .cross {
 	display: block;
-	position: fixed;
 }
 
 .menu-button.is-open .menu {
