@@ -4,6 +4,7 @@
 	}
 	@include respond-to(dekstop) {
 		display: flex;
+		justify-content: space-between;
 	}
 }
 .page-header__link {
@@ -20,6 +21,15 @@
 			color: $active-color;
 			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
+	}
+	@include respond-to(dekstop) {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		color: $main-color;
+		display: flex;
+		position: relative;
 	}
 }
 .page-header__link {
@@ -43,6 +53,10 @@
 		text-align: center;
 		letter-spacing: 0.02em;
 	}
+	@include respond-to(dekstop) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 .page-header__link__underline::after {
 	@include respond-to(dekstop) {
@@ -55,22 +69,8 @@
 		bottom: -1px;
 	}
 }
-.page-header__contact {
+.phone {
 	color: $active-color;
-	@include respond-to(tablet) {
-		font-style: normal;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 1.14;
-		color: $sec-active-color;
-		padding: 32px 0;
-		display: flex;
-		align-items: center;
-		&:hover {
-			color: $active-color;
-			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-		}
-	}
 }
 .mail {
 	color: #757575;
@@ -105,22 +105,19 @@
 	display: flex;
 	flex-direction: column-reverse;
 	@include respond-to(tablet) {
-		padding: 0;
 		flex-direction: column;
 		display: flex;
 		justify-content: space-between;
 		margin-left: auto;
 	}
 	@include respond-to(dekstop) {
-		padding: 0;
-		padding-left: auto;
-		display: inline-flex;
+		display: flex;
+		justify-content: space-between;
 		flex-direction: row;
+		margin-left: auto;
 	}
 }
-.page-header__main-contacts:first-child {
-	margin: 0;
-}
+
 header {
 	border-bottom: 1px solid #ececec;
 }
@@ -139,6 +136,9 @@ header {
 	@include respond-to(tablet) {
 		margin-right: 50px;
 		padding-bottom: 0;
+	}
+	@include respond-to(dekstop) {
+		margin-right: 50px;
 	}
 }
 .page-header__link:focus {
@@ -176,7 +176,6 @@ header {
 	@include respond-to(tablet) {
 		display: flex;
 		justify-content: space-between;
-		margin: 0;
 	}
 }
 .page-header__link__underline::after {
@@ -199,7 +198,6 @@ header {
 		line-height: 1.14;
 		color: $sec-active-color;
 		padding: 0;
-		margin: 0;
 		display: flex;
 		align-items: center;
 		&:hover {
@@ -207,17 +205,20 @@ header {
 			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
+	@include respond-to(dekstop) {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 1.14;
+		color: $sec-active-color;
+		display: flex;
+		align-items: center;
+	}
 }
 .page-header__contacts-networks {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-
-header__main-contacts:first-child {
-	@include respond-to(tablet) {
-		margin: 0;
-	}
 }
 header {
 	@include respond-to(tablet) {
@@ -229,11 +230,5 @@ header {
 	@include respond-to(tablet) {
 		fill: currentColor;
 		margin-right: 10px;
-	}
-}
-
-.contacts__link {
-	@include respond-to(tablet) {
-		margin-bottom: 0;
 	}
 }

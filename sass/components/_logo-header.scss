@@ -30,8 +30,8 @@
 		}
 	}
 	@include respond-to(dekstop) {
+		margin-right: 93px;
 		display: flex;
-		margin-right: auto;
 		margin-left: auto;
 		align-items: center;
 		font-family: "Raleway", sans-serif;
