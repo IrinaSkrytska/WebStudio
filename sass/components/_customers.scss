@@ -31,9 +31,22 @@
 .customers__meta:nth-child(2n + 1) {
 	margin-right: 30px;
 }
-.customers__meta:nth-child(even) {
+.customers__meta {
 	@include respond-to(tablet) {
 		margin-right: 30px;
+	}
+}
+.customers__meta:nth-child(3) {
+	@include respond-to(tablet) {
+		margin-right: 0;
+	}
+	@include respond-to(dekstop) {
+		margin-right: 30px;
+	}
+}
+.customers__meta:nth-child(6) {
+	@include respond-to(tablet) {
+		margin-right: 0;
 	}
 }
 .customers__meta .customers__link {

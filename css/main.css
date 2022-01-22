@@ -731,7 +731,6 @@ header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1254,8 +1253,26 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  .customers__meta:nth-child(even) {
+  .customers__meta {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers__meta:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers__meta:nth-child(3) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers__meta:nth-child(6) {
+    margin-right: 0;
   }
 }
 

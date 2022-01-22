@@ -1,7 +1,6 @@
 .benefits__thumb {
 	display: flex;
 	flex-direction: column;
-	margin-left: 0 auto;
 	@include respond-to(tablet) {
 		display: flex;
 		flex-direction: row;
