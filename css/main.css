@@ -402,16 +402,17 @@ header {
   color: #2196f3;
 }
 
-.page-header__network:not(:last-child)::after {
-  content: "";
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  margin-left: 10px;
+.page-header__network:not(:last-child) {
   margin-right: 10px;
 }
 @media screen and (min-width: 768px) {
-  .page-header__network:not(:last-child)::after {
+  .page-header__network:not(:last-child) {
     display: none;
   }
+}
+
+.page-header__network__border {
+  border-right: 2px solid rgba(33, 33, 33, 0.2);
 }
 
 @media screen and (min-width: 768px) {
