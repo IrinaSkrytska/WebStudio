@@ -168,6 +168,10 @@ header {
 		display: none;
 	}
 }
+.page-header__network__border {
+	border-right: 2px solid rgba(33, 33, 33, 0.2);
+}
+
 .page-header__nav {
 	@include respond-to(tablet) {
 		display: flex;
