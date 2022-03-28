@@ -395,6 +395,7 @@ header {
 }
 
 .page-header__network-link {
+  margin-right: 5px;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -402,16 +403,8 @@ header {
   color: #2196f3;
 }
 
-.page-header__network:not(:last-child) {
-  margin-right: 10px;
-}
-@media screen and (min-width: 768px) {
-  .page-header__network:not(:last-child) {
-    display: none;
-  }
-}
-
 .page-header__network__border {
+  margin-right: 5px;
   border-right: 2px solid rgba(33, 33, 33, 0.2);
 }
 
@@ -2090,7 +2083,7 @@ img {
   z-index: 3;
   padding-bottom: 48px;
   padding-top: 48px;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 @media screen and (min-width: 768px) {
   .menu__container {
